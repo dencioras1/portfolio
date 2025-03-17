@@ -34,7 +34,7 @@
 
 .content-container {
     display: flex;
-    align-self: stretch;
-    background-color: cadetblue;
+    flex-grow: 1;
+    background-color: rgb(160, 126, 95);
 }
 
