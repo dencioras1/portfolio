@@ -35,7 +35,13 @@ buttons.forEach(button => {
 
     // Handle click events
     button.addEventListener('click', function () {
-        if (button.id !== activeTargetID) {
+        if(button.id == 'github') {
+            window.open('https://github.com/dencioras1', '_blank');
+        }
+        else if(button.id == 'linked-in') {
+            window.open('https://linkedin.com/in/denas-hakuts-kozmianas', '_blank');
+        }
+        else if (button.id !== activeTargetID) {
             // Reset previous active button's background color
             activeButton.style.backgroundColor = '';
 
@@ -55,6 +61,8 @@ buttons.forEach(button => {
 
             // Show the new active content
             activeContent.style.display = 'flex';
+
+
         }
     });
 });

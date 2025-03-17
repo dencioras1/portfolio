@@ -9,7 +9,7 @@
     justify-content: flex-start;
     height: 100vh;
     width: 100vw;
-    background-image: url('BackgroundImages/Background_3.jpg');
+    background-image: url('Images/Background_3.jpg');
 }
 
 .taskbar-container {
@@ -41,10 +41,23 @@
 .content {
     display: none;
     flex-grow: 1;
+    flex-direction: row;
+    justify-content: flex-end;
     margin: 64px;
+    padding: 36px;
     background-color: rgba(250, 235, 215, 0.95);
 }
 
+.photo {
+    background-image: url('Images/Denas.jpg');
+    background-size: cover;
+    width: 600px;
+    height: auto
+}
+
+#about-me .text {
+    flex-grow: 1;
+}
 /* .content.active {
     display: flex;
 } */
