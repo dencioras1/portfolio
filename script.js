@@ -3,7 +3,7 @@ const contentWindows = document.querySelectorAll('.content');
 const projects = document.querySelectorAll('.project')
 
 // Set default active button and content
-let activeTargetID = 'the-odin-project';
+let activeTargetID = 'about-me';
 
 let activeButton = document.querySelector(`.button#${activeTargetID}`);
 let activeContent = document.querySelector(`.content#${activeTargetID}`);
