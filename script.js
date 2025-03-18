@@ -1,5 +1,6 @@
 const buttons = document.querySelectorAll('.button');
 const contentWindows = document.querySelectorAll('.content');
+const projects = document.querySelectorAll('.project')
 
 // Set default active button and content
 let activeTargetID = 'about-me';
@@ -73,3 +74,15 @@ buttons.forEach(button => {
         }
     });
 });
+
+projects.forEach(project => {
+    project.addEventListener('mouseenter', () => {
+        project.style.backgroundColor = 'rgba(255, 228, 196, 0.5)';
+        project.style.transition = 'background-color 0.2s ease';
+    });
+
+    project.addEventListener('mouseleave', () => {
+        project.style.backgroundColor = '';
+        project.style.transition = 'background-color 0.2s ease';
+    });
+})
