@@ -14,6 +14,9 @@ activeButton.style.backgroundColor = 'rgba(255, 228, 196, 0.7)';
 // Show the default active content
 activeContent.style.display = 'flex';
 
+// Change active button text color
+activeButton.style.color = 'black'
+
 // Add event listeners to buttons
 buttons.forEach(button => {
     // Add hover effects only for non-active buttons
@@ -48,6 +51,9 @@ buttons.forEach(button => {
             // Hide previous active content
             activeContent.style.display = 'none';
 
+            // Change previous button text color
+            activeButton.style.color = 'white'
+
             // Update active target ID
             activeTargetID = button.id;
 
@@ -62,7 +68,8 @@ buttons.forEach(button => {
             // Show the new active content
             activeContent.style.display = 'flex';
 
-
+            // Change text color
+            activeButton.style.color = 'black'
         }
     });
 });
